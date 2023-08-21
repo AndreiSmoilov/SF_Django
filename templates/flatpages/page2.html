@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'flatpages/default.html' %}
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+    {% block title %}
+    {{ flatpage.title }}
+    {% endblock title %}
+
+    {% block content %}
+        <h2>{{ flatpage.title }}</h2>
+        <hr>
+    <h3><font size="10" face="Georgia"><i>Другой</i></font> <font size="5" color="red" face="Arial black">шрифт и <font size="3" color="green" face="Lucida Console"><b>размер</b></font></h3>
+    {{ flatpage.content }}
+    {% endblock content %}
+</body>
+</html>
